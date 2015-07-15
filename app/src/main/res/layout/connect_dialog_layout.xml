@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/dialog_wrapper"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_title_wrapper"
+        android:layout_width="match_parent"
+        android:paddingRight="4dp"
+        android:layout_height="48dp"
+        android:background="@drawable/dialog_box_title"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/dialog_refresh_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_refresh" />
+
+        <TextView
+            android:id="@+id/dialog_title_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/dialog_refresh_btn"
+            android:text="Bluetooth Devices"
+            android:textColor="@color/white"
+            android:gravity="center" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dialog_box_body"
+        android:gravity="center_horizontal"
+        android:paddingBottom="4dp" >
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/list_selector"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp">
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

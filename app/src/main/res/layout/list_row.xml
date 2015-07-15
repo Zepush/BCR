@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth device"
+        android:layout_alignTop="@+id/image_click"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/device_Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:text="Paired"
+        android:id="@+id/device_Status" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_Status"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/image_click" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/bluetooth_icon"
+        android:layout_alignTop="@+id/device_Name"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/bluetooth_image" />
+</RelativeLayout>

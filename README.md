@@ -36,3 +36,5 @@ An android app use to control arduino board via module bluetooth HC-05.
   GND pin (HC-05) --> GND pin (Arduino Board).
   
   VCC pin (HC-05) --> VCC 5V pin (Arduino Board).
+  
+  Video about use this app to control a robot: https://www.youtube.com/watch?v=rylfuUiEz3k
